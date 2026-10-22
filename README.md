@@ -2,38 +2,42 @@
 
 **官方网站：[cerycloud.com](https://cerycloud.com)**
 
-CeryCloud Lite 的官方安装包发布仓库，提供 Windows、Android、Linux 和 macOS 版本。本仓库仅包含发布说明，安装包和校验文件位于 Releases，不包含客户端源码。
+CeryCloud Lite 官方安装包发布仓库。本仓库仅包含发布说明，不包含客户端源码；安装包与校验文件位于 Releases。
 
-## 下载 4.0.0
+## 下载 4.0.1
 
-**[下载最新版本](https://github.com/cerycloudnew/CeryCloud-Lite-Releases/releases/latest)** · [历史版本](https://github.com/cerycloudnew/CeryCloud-Lite-Releases/releases)
+**[查看最新发布与说明](https://github.com/cerycloudnew/CeryCloud-Lite-Releases/releases/tag/v4.0.1)** · [历史版本](https://github.com/cerycloudnew/CeryCloud-Lite-Releases/releases)
 
-请在发布页的 **Assets** 中下载对应安装包。GitHub 自动生成的 “Source code” 压缩文件只包含本仓库说明，不是安装包。
+| 系统 | 下载 |
+| --- | --- |
+| Windows x64 安装版 | [CeryCloud-Lite-4.0.1-windows-x64-setup.exe](https://github.com/cerycloudnew/CeryCloud-Lite-Releases/releases/download/v4.0.1/CeryCloud-Lite-4.0.1-windows-x64-setup.exe) |
+| Windows x64 便携版 | [CeryCloud-Lite-4.0.1-windows-x64-portable.zip](https://github.com/cerycloudnew/CeryCloud-Lite-Releases/releases/download/v4.0.1/CeryCloud-Lite-4.0.1-windows-x64-portable.zip) |
+| Android ARM64（主推） | [CeryCloud-Lite-4.0.1-android-arm64-v8a.apk](https://github.com/cerycloudnew/CeryCloud-Lite-Releases/releases/download/v4.0.1/CeryCloud-Lite-4.0.1-android-arm64-v8a.apk) |
+| Android ARMv7 | [CeryCloud-Lite-4.0.1-android-armeabi-v7a.apk](https://github.com/cerycloudnew/CeryCloud-Lite-Releases/releases/download/v4.0.1/CeryCloud-Lite-4.0.1-android-armeabi-v7a.apk) |
+| Android x86_64 | [CeryCloud-Lite-4.0.1-android-x86_64.apk](https://github.com/cerycloudnew/CeryCloud-Lite-Releases/releases/download/v4.0.1/CeryCloud-Lite-4.0.1-android-x86_64.apk) |
+| macOS Apple 芯片 | [CeryCloud-Lite-4.0.1-macos-arm64.dmg](https://github.com/cerycloudnew/CeryCloud-Lite-Releases/releases/download/v4.0.1/CeryCloud-Lite-4.0.1-macos-arm64.dmg) |
+| macOS Intel | [CeryCloud-Lite-4.0.1-macos-x64.dmg](https://github.com/cerycloudnew/CeryCloud-Lite-Releases/releases/download/v4.0.1/CeryCloud-Lite-4.0.1-macos-x64.dmg) |
+| Linux x64 AppImage | [CeryCloud-Lite-4.0.1-linux-x64.AppImage](https://github.com/cerycloudnew/CeryCloud-Lite-Releases/releases/download/v4.0.1/CeryCloud-Lite-4.0.1-linux-x64.AppImage) |
+| Linux AMD64 Debian / Ubuntu | [CeryCloud-Lite-4.0.1-linux-amd64.deb](https://github.com/cerycloudnew/CeryCloud-Lite-Releases/releases/download/v4.0.1/CeryCloud-Lite-4.0.1-linux-amd64.deb) |
+| Linux x86_64 RPM | [CeryCloud-Lite-4.0.1-linux-x86_64.rpm](https://github.com/cerycloudnew/CeryCloud-Lite-Releases/releases/download/v4.0.1/CeryCloud-Lite-4.0.1-linux-x86_64.rpm) |
 
-| 系统 | 选择版本 | 安装方法 |
-| --- | --- | --- |
-| Windows | `windows-x64.zip` | 解压整个目录，运行 cerycloud-lite.exe，保留内核和许可证。需要 WebView2 Runtime。 |
-| Android 手机 | `android-arm64.apk` | 大多数手机选择 ARM64，下载后打开 APK 安装。 |
-| Android x86_64 | `android-x86_64.apk` | 用于 x86_64 设备/模拟器。 |
-| Linux 桌面 | `linux-desktop-x64.tar.gz` | 解压后运行 cerycloud-lite，需要桌面环境及 GTK/WebKitGTK 4.1 等依赖。 |
-| Linux Server | `linux-server-x64.tar.gz` | 无桌面后台服务、CLI 和本机网页管理，详见发布页 INSTALL.md。 |
-| macOS M 系列芯片 | `macos-arm64.dmg` | 打开 DMG，把 CeryCloud Lite.app 拖入 Applications。 |
-| macOS Intel | `macos-x86_64.dmg` | 同上，可在“关于本机”查看芯片类型。 |
+Android TV 按设备 CPU 架构选择同一个 Android 包；ARM64 电视使用 ARM64 APK。Android 沿用原包名及原正式 Release 签名。
+Windows 便携版请完整解压，保留内核、资源和许可证。
+当前十种成品不包含 Linux 无桌面 Server 安装包。
 
-## Android 升级说明
+## 更新与验证范围
 
-4.0.0 使用长期正式发布签名，并关闭调试功能。之前的 0.1.0 调试签名包不能直接覆盖升级；请先备份本地设置，卸载旧版后安装并重新登录。卸载会清除旧版应用数据，后续正式版本复用同一发布签名。
+4.0.1 修复桌面延迟测量口径，并支持可选的构建时固定邀请码；本批普通发行包未配置内置邀请码。
+版本统一为 4.0.1，完整源码提交标识、各文件 SHA-256 及实际测试边界见发布附件。
 
-## macOS 安装说明
-
-当前 macOS 包使用 ad-hoc 临时签名，未取得 Developer ID 签名或 Apple 公证。如果系统仅因开发者身份未验证而阻止打开，在确认来源及文件校验值后，可到“系统设置 → 隐私与安全性 → 仍要打开”确认，无需关闭全局安全保护。
-
-如果提示文件已损坏或包含恶意软件，请先检查下载完整性并反馈具体提示。TUN 仍需单独系统授权。[Apple 官方说明](https://support.apple.com/zh-cn/102445)
+本轮为定向回归，没有对每个当前成品重跑完整原生测试；Windows 普通用户 GUI/UAC 弹窗未在本轮重新验证。
+Mac 两架构 DMG 已构建和挂载校验，但使用 **ad-hoc 签名，未取得 Developer ID 签名或 Apple 公证**，没有实体 Intel Mac 验收，系统可能阻止首次打开。
+详见发布页 `README.md`、`BUILD-INFO.json`、`ACCEPTANCE.json`；不保证所有设备、系统版本、节点和网络均通过。
 
 ## 校验与反馈
 
-每次发布附带 SHA256SUMS.txt。安装包保留第三方许可证。各平台的验证范围详见对应 Release，不代表覆盖所有设备、网络和系统版本。
-
-遇到问题可在 [Issues](https://github.com/cerycloudnew/CeryCloud-Lite-Releases/issues) 提交系统版本、应用版本与错误信息，请勿公开密码、认证信息或订阅链接。
+下载后使用发布页的 `SHA256SUMS.txt` 核对文件。GitHub 自动生成的 “Source code” 压缩文件仅包含本仓库说明，不是客户端安装包。
+安装包保留第三方许可证，本仓库不包含签名私钥、账号凭据或含密订阅。
+问题反馈：[Issues](https://github.com/cerycloudnew/CeryCloud-Lite-Releases/issues)。请勿公开密码、认证信息或订阅链接。
 
 官网：[https://cerycloud.com](https://cerycloud.com)
