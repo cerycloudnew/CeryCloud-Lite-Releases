@@ -4,7 +4,6 @@
 
 本仓库只发布官方安装包、校验清单与安装说明，不包含客户端源码或签名私钥。
 
-[下载最新版 4.0.2](https://github.com/cerycloudnew/CeryCloud-Lite-Releases/releases/tag/v4.0.2)
 
 | 系统 | 安装包 |
 | --- | --- |
