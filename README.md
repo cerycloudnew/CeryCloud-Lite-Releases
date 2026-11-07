@@ -2,7 +2,7 @@
 
 官网：[cerycloud.com](https://cerycloud.com) · [下载最新版本](https://github.com/cerycloudnew/CeryCloud-Lite-Releases/releases/latest)
 
-当前版本 **4.0.5**，提供 11 个标准版成品及 SHA-256 校验清单。
+当前版本 **4.0.6**，提供 11 个标准版成品及 SHA-256 校验清单。
 
 在发行页的 Assets 中选择对应系统安装包，安装前按 `SHA256SUMS.txt` 核对文件名和 SHA-256。具体安装方法见发行页的安装说明。
 
