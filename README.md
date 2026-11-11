@@ -2,7 +2,7 @@
 
 官网：[cerycloud.com](https://cerycloud.com) · [下载最新版本](https://github.com/cerycloudnew/CeryCloud-Lite-Releases/releases/latest)
 
-当前版本 **4.0.8**，提供 11 个标准版成品及 SHA-256 校验清单。
+当前版本 **4.0.9**，提供 11 个标准版成品及 SHA-256 校验清单。
 
 在发行页的 Assets 中选择对应系统安装包，安装前按 `SHA256SUMS.txt` 核对文件名和 SHA-256。具体安装方法见发行页的安装说明。
 
@@ -19,3 +19,5 @@ Android 正式版通常可直接覆盖升级；从 0.1.0 测试版迁移到正�
 校验示例：Windows 使用 `Get-FileHash -Algorithm SHA256 文件名`，macOS 使用 `shasum -a 256 文件名`，Linux 使用 `sha256sum 文件名`。
 
 GitHub 自动生成的 Source code 压缩文件不是客户端安装包。
+
+Linux Server 首次部署请先按包内 `INSTALL.txt` 完成初始化，再启动服务。
